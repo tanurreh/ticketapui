@@ -38,7 +38,7 @@ class CityCard extends StatelessWidget {
               ),
               child: Stack(children: [
                 Positioned(
-                  left: 10.w,
+                  left: 10.h,
                   bottom: 20.h,
                   child: Text(
                     city.cityName,
