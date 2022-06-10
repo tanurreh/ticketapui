@@ -19,14 +19,15 @@ class CityCard extends StatelessWidget {
     return InkWell(
         onTap: () {
           Get.to(
-            () => BookingDetail(
-              city: city,
-            ),
-            //
-          );
+              () => BookingDetail(
+                    city: city,
+                  ),
+              transition: Transition.downToUp
+              //
+              );
         },
         child: Hero(
-          tag: "tanu",
+          tag: city.imagePath,
           child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(

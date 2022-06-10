@@ -41,9 +41,10 @@ class HomeScreen extends StatelessWidget {
                   width: 160.w,
                   child: ElevatedButton(
                     onPressed: () {
-                      Get.to(() => const MainScreen(),
-                          transition: Transition.downToUp,
-                          duration: const Duration(milliseconds: 700));
+                      Get.to(
+                        () => const MainScreen(),
+                        transition: Transition.downToUp,
+                      );
                     },
                     child: Text("Sign up",
                         style: kLTextStyke.copyWith(

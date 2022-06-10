@@ -38,7 +38,9 @@ class _ChoiceChipwidgetState extends State<ChoiceChipwidget> {
                   EdgeInsets.symmetric(horizontal: 20.w, vertical: 8.h),
               label: Text(_choices![index],
                   style: kCityStyle.copyWith(
-                      color: icolor, fontWeight: FontWeight.w400)),
+                      color:
+                          _defaultChoiceIndex == index ? Colors.white : icolor,
+                      fontWeight: FontWeight.w400)),
               selected: _defaultChoiceIndex == index,
               selectedColor: kPinkColor,
               backgroundColor: kGreyOutlined,
